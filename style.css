@@ -7,3 +7,64 @@
     color: green;
     display: none;
 }
+
+ul li {
+    list-style: none;
+}
+
+#error-1,
+#correct-1 {
+    text-transform: capitalize;
+    margin-top: 0px;
+}
+
+#error-1 {
+    color: red;
+}
+
+#correct-1 {
+    color: green;
+}
+
+h1 {
+    color: black;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* TIFE'S STYLING */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+
+.box {
+    height: 20px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.box input {
+    width: 100%;
+    height: 100%;
+}
+
+.box input:focus {
+    outline: none;
+}
