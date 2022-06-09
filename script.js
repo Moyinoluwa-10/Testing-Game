@@ -1,18 +1,46 @@
+// MOYIN'S JAVASCRIPT
 /* Get the value from the input box */
 const answer = document.querySelector('#answer')
-const error_message = document.getElementById('error')
-const correct_message = document.getElementById('correct')
+const reply = document.getElementById('error')
 
-// Writing the function
+
+// Writing the functions
 function validateAnswer() {
+
     const finalAnswer = answer.value;
-    if (finalAnswer == 83159) {
-        correct_message.style.display = 'block'
+
+    let num = finalAnswer * 5
+    
+    if(Number.isNaN(num) == true) {
+        showError('Input is not a number, please input a number')
+        reply.style.color = 'red'
+        answer.value = ' '
     } else {
-        error_message.style.display = 'block'
+        showAnswer()
     }
 
 }
+
+function showAnswer() {
+    
+    const finalAnswer = answer.value;
+    
+    if (finalAnswer == 83159) {
+        showError('You are right, Congratulations')
+        reply.style.color = 'green'
+        answer.value = ' '
+    } else {
+        showError('You are wrong, try again')
+        reply.style.color = 'red'
+        answer.value = ' '
+    }
+
+}
+
+function showError(message) {
+    reply.innerHTML = message
+}
+
 
 
 
