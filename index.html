@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Google Fonts(Lato) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    
+    <h1>Question</h1>
+
+    <div>
+        Esther is a Mathematician  who has been living with Cancer for 5 years. She has teo sons( Micheal and Thales). She doesn't know how to share her properties between her sons, so she decided to use a game called <strong> " Dead and Injured". </strong><br><br>
+
+        Dead means the number is part of the code  and in the right place while Injured means the number is part of the code but in the wrong place. <br><br>
+
+        She said " 
+        <ul>
+            <li>26340 - 1 injured</li>
+            <li>71826 - 2 injured</li>
+            <li>86470 - 1 dead</li>
+            <li>47356 - 1 dead 1 Injured </li>
+            <li>03649 - 2 dead</li>
+        </ul>
+        
+        And finally she said the addition of the 3rd and 4th digit of the code equals " 6" <br><br>
+
+        With the sons having just 1 trial each, what is the 5 digit code to open her briefcase? <br><br>
+    </div>
+
+    <div>
+
+        <label for="answer"><strong>Answer</strong></label><br><br>
+        <input type="text" name="answer" id="answer">
+        <button onclick="validateAnswer()">Submit</button><br>
+        <small id="error">You are wrong, try again</small><br>
+        <small id="correct">You are right, Congratulations</small>
+
+
+    </div>
+
+
+    <!-- Link to Javascript File -->
+    <script src="script.js"></script>
+</body>
+</html>
